@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>范阮越葵</title>
+
+<!-- v.6 CSS 樣式 -->
+<style type="text/css">
+* { font-family: "標楷體"; margin: 0 auto; }
+h1 { color: blue; font-size: 60px; }
+h2 { color: #33ff33; font-size: 40px; }
+</style>
+
+<!-- v.7 JavaScript 互動 -->
+<script>
+function change1() {
+document.getElementById("pic").src = "https://picsum.photos/400/300?random=2";
+document.getElementById("h2text").innerText = "靜宜資管";
+}
+function change2() {
+document.getElementById("pic").src = "https://picsum.photos/400/300?random=1";
+document.getElementById("h2text").innerText = "欢迎来到我的网页";
+}
+</script>
+</head>
+<body>
+<!-- v.5 表格排版 -->
+<table width="70%" border="1">
+<tr>
+<td>
+<!-- v.4 圖片 + JavaScript 事件 -->
+<img
+src="https://picsum.photos/400/300?random=1"
+id="pic"
+width="100%"
+onmouseover="change1()"
+onmouseout="change2()"
+>
+</td>
+<td>
+<!-- v.1 ~ v.2 個人資訊 + 標題 -->
+<h1>范阮越葵</h1>
+<h2 id="h2text">欢迎来到我的网页</h2>
+
+<!-- v.3 超連結 -->
+GitHub: <a href="https://github.com/phamnguyenvietkhuong-lgtm/aboutme-" target="_blank">https://github.com/phamnguyenvietkhuong-lgtm/aboutme-</a><br>
+E-Mail: <a href="mailto:phamnguyenvietkhuong@gmail.com">phamnguyenvietkhuong@gmail.com</a><br>
+Tel: <a href="tel:0901206381">0901206381</a><br>
+
+<br>
+<!-- v.4 音樂 -->
+<audio controls>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+
+
+<br><br>
+<!-- v.4 YouTube 影片 -->
+<iframe width="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+</td>
+</tr>
+</table>
+</body>
+</html>
